@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard Table</title>
+    <style>
+        /* Styling the table container */
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+            margin: 0;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Header Row Styling */
+        thead tr {
+            background-color: #009688;
+            color: white;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        thead th {
+            padding: 12px 15px;
+        }
+
+        /* Body Row Styling */
+        tbody tr {
+            background-color: #ffffff;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tbody td {
+            padding: 12px 15px;
+            font-size: 16px;
+        }
+
+        /* Highlight a specific row (like Sally's row) */
+        tbody tr:nth-child(2) {
+            font-weight: bold;
+            color: #009688;
+        }
+
+        /* Hover Effect */
+        tbody tr:hover {
+            background-color: #e0f2f1;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>5
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Domenic</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

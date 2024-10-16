@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Lists with Hover Effect</title>
+    <style>
+        /* General Styling for Lists */
+        .styled-list {
+            list-style: none; /* Removes default bullets/numbers */
+            padding: 0;
+            margin: 20px 0;
+            width: 300px;
+        }
+
+        /* Styling for List Items */
+        .styled-list li {
+            background-color: #e0e0e0;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Arial', sans-serif;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        /* Hover Effect */
+        .styled-list li:hover {
+            background-color: #3b82f6; /* Blue background on hover */
+            color: white; /* White text on hover */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Ordered List</h2>
+    <ol class="styled-list">
+        <li>Learn HTML</li>
+        <li>Practice CSS</li>
+        <li>Explore JavaScript</li>
+        <li>Build Web Projects</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul class="styled-list">
+        <li>Read Documentation</li>
+        <li>Join Coding Communities</li>
+        <li>Contribute to Open Source</li>
+        <li>Stay Curious and Keep Learning!</li>
+    </ul>
+
+</body>
+</html>
